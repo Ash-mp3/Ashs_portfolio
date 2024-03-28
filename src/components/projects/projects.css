@@ -1,0 +1,59 @@
+#projectsPage {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 90px;
+}
+
+#projectsHeader {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#projectsHeader h1 {
+    font-size: 60px;
+    width: fit-content;
+    padding: 10px;
+    background-color: black;
+}
+
+#projectsContent {
+    width: 90%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.proCol {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card {
+    width: 90%;
+    height: 45%;
+    background-color: white;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.content {
+ width: 100%;
+ height: 50%;
+}
+
+.content img {
+    width: 100%;
+    height: 50%;
+}
