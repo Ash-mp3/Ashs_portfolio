@@ -1,39 +1,17 @@
 #aboutPage {
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 90px;
-}
-
-#aboutHeader {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-#aboutHeader h1 {
-    font-size: 60px;
-    width: fit-content;
-    padding: 10px;
-    background-color: black;
+    background-color: #1A1A1A;
 }
 
 #aboutContent {
     height: 60%;
     width: 60%;
-    background-color: #282828;
-    border: 2px solid black;
     border-radius: 7px;
-    padding: 10px 20px;
-    
 }
 
 #aboutContent p {
     font-size: 20px;
     height: 50%;
+    font-weight: 300;
 }
 
 #skillsDiv {
@@ -43,7 +21,7 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    margin: 25px 0;
+    margin: 60px 0 25px;
 }
 
 #skillsDiv div {
@@ -52,4 +30,7 @@
     padding: 20px;
     margin: 20px 20px;
     background-color: #282828;
+    width: 20%;
+    height: 20%;
+    text-align: center;
 }

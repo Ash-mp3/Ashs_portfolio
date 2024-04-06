@@ -13,12 +13,14 @@ import Todos from "../../imgs/projectImgs/todos.png";
 
 const Projects = () => {
   return (
-    <div id="projectsPage">
-      <div id="projectsHeader">
-        <h1>projects</h1>
+    <div id="projectsPage" className="PageStructure">
+      <div className="pageHeaderDiv">
+        <div className="colorDiv"></div>
+        <div className="grayDiv"></div>
+        <h2>Projects</h2>
       </div>
       <div id="projectsContent">
-        <div class="proCol">
+        <div className="proCol">
           <Card className="card">
             <CardContent className="content">
               <Image src={Dex} alt="pokedex website image" />
@@ -34,13 +36,14 @@ const Projects = () => {
               <Image src={Netflix} alt="pokedex website image" />
             </CardContent>
             <CardActions className="buttons">
-              <Button variant="contained" color="secondary">Live Link</Button>
+              <Button variant="contained">
+                Live Link
+              </Button>
               <Button variant="contained">Learn More</Button>
             </CardActions>
           </Card>
-
         </div>
-        <div class="proCol">
+        <div className="proCol">
           <Card className="card">
             <CardContent className="content">
               <Image src={Todos} alt="pokedex website image" />

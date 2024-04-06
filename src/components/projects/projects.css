@@ -1,24 +1,5 @@
 #projectsPage {
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 90px;
-}
-
-#projectsHeader {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-#projectsHeader h1 {
-    font-size: 60px;
-    width: fit-content;
-    padding: 10px;
-    background-color: black;
+    background-color: transparent;  
 }
 
 #projectsContent {

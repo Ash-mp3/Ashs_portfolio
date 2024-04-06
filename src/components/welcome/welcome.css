@@ -1,0 +1,47 @@
+#welcomePage {
+    height: 100%;
+    width: auto;
+    background-color: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#welcomeMsg {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+}
+
+#welcomeMsg * {
+    margin: 0 30px;
+}
+
+#welcomePage h1 {
+    width: min-content;
+    font-size: 1.3em;
+    align-self: center;
+    text-align: flex-end;
+    position: relative;
+    animation-name: slideLeft;
+    animation-duration: 2s;
+}
+
+#logoImg {
+    border-right: 4px solid rgb(79, 136, 62);
+    position: relative;
+    animation-name: slideRight;
+    animation-duration: 2s;
+}
+
+/* @keyframes slideRight {
+    0% {left: -600px; border-right-color: rgb(79, 136, 62, 0); opacity: 0;}
+    80% {left: 0px; border-right-color: rgb(79, 136, 62, 0); opacity: 1;}
+    100% { left: 0px; border-right-color: rgb(79, 136, 62);}
+}
+
+@keyframes slideLeft {
+    0% {left: 400px; }
+    80% {left: 0px; }
+    100% { left: 0px;}
+} */
