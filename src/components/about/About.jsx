@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react";
 import Image from "next/image";
 import jsLogo from "../../imgs/skillImgs/jsLogo.png";
 import cssLogo from "../../imgs/skillImgs/cssLogo.png";
-import gitHubLogo from "../../imgs/skillImgs/gitHubLogo.png";
+import gitHubLogo from "../../imgs/skillImgs/githubLogo.png"
 import gitLogo from "../../imgs/skillImgs/gitLogo.png";
 import htmlLogo from "../../imgs/skillImgs/htmlLogo.png";
 import nodeLogo from "../../imgs/skillImgs/nodeLogo.png";

@@ -1,6 +1,4 @@
 "use client";
-import {useRef} from 'react';
-import Link from "next/link";
 import Header from "@/components/header/Header";
 import About from "../components/about/About";
 import Projects from "@/components/projects/Projects";
@@ -12,7 +10,6 @@ export default function page() {
   
   return (
     <>
-      
       <div id="mainDiv">
         <HexBg />
         <Welcome />
