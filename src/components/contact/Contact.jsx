@@ -1,4 +1,5 @@
 import "./contact.css";
+import { Button } from "@mui/material";
 
 const Contact = () => {
   return (
@@ -17,7 +18,7 @@ const Contact = () => {
           <input type="text" placeholder="Name"/>
           <input type="text" placeholder="Email"/>
           <textarea type="text" rows={5} placeholder="Message" />
-          <button type="submit">Send</button>
+          <Button type="submit" variant="outlined">Send</Button>
         </form>
       </div>
     </div>

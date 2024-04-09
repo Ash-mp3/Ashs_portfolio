@@ -1,54 +1,51 @@
 import "./header.css";
-import Link from "next/link";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import ashLogo from "../../imgs/Ash-Logo.png";
 
 const Header = () => {
-  const header = useRef(null);
-  const [stickyHeader, setStickyHeader] = useState("");
+	const header = useRef(null);
+	const nav = useRef();
+	const [stickyHeader, setStickyHeader] = useState("");
+	const [currLink, setCurrLink] = useState();
 
-  // let options = {
-  //   threshold: 1.0,
-  // };
+	useEffect(() => {
+		const navbarOffset = header.current.offsetTop;
+		const navLinks = nav.current.children;
+		const handleScroll = (e) => {
+			if (window.scrollY >= navbarOffset) {
+				setStickyHeader("sticky");
+			} else {
+				setStickyHeader("");
+			}
+		};
 
-  // useEffect(() => {
-  //   const startAnimation = (entries, observer) => {
-  //     if (entries[0].boundingClientRect.y < 1) {
-  //       setHeaderStick('scrolled')
-  //     } console.log(entries[0].boundingClientRect)
-  //     console.log(window.scrollY)
-  //   }
-  //   const observer = new IntersectionObserver(startAnimation, options);
-  //   observer.observe(floatingDivs.current)
+		const handleClick = (e) => {
+			console.log(e.target);
+		};
 
-  // }, [])
+		// console.log(navLinks.current.children)
+		window.addEventListener("scroll", handleScroll);
+		for (let i = 0; i < navLinks.length; i++) {
+			navLinks[i].addEventListener("click", handleClick);
+		}
+	}, []);
 
-  useEffect(() => {
-    const navbarOffset = header.current.offsetTop;
-    const handleScroll = (e) => {
-      // console.log(window.scrollY, navbarOffset);
-      if (window.scrollY >= navbarOffset) {
-        setStickyHeader("sticky");
-      } else {
-        setStickyHeader("");
-      }
-    };
-    window.addEventListener("scroll", handleScroll);
-  }, []);
-
-  return (
-    <div id="ghostHeader">
-      <header ref={header} className={stickyHeader}>
-        <Image id="ashLogo" src={ashLogo} alt="ash logo" />
-        <div id="navLinks">
-          <Link href={"/about"}>About</Link>
-          <Link href={"/about"}>Projects</Link>
-          <Link href={"/about"}>Contact</Link>
-        </div>
-      </header>
-    </div>
-  );
+	return (
+		<div id="ghostHeader">
+			<header ref={header} className={stickyHeader}>
+				<Image id="ashLogo" src={ashLogo} alt="ash logo" />
+				<div ref={nav} id="navLinks">
+					<AnchorLink href="#welcomePage">Home</AnchorLink>
+					<AnchorLink href="#aboutPage">About</AnchorLink>
+					<AnchorLink href="#projectsPage">Projects</AnchorLink>
+					<AnchorLink href="#contactPage">Contact</AnchorLink>
+				</div>
+			</header>
+			<div></div>
+		</div>
+	);
 };
 
 export default Header;

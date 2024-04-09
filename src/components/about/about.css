@@ -4,33 +4,99 @@
 
 #aboutContent {
     height: 60%;
-    width: 60%;
+    width: 100%;
     border-radius: 7px;
 }
 
-#aboutContent p {
-    font-size: 20px;
+#aboutParagraph {
     height: 50%;
+    width: 55%;
+    font-size: 20px;
     font-weight: 300;
+    margin: 0 auto 80px;
 }
 
-#skillsDiv {
+#skillDiv {
     width: 100%;
     height: 50%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 60px 0 25px;
+    overflow: hidden;
+    position: relative;
 }
 
-#skillsDiv div {
-    border: 1px solid black;
-    border-radius: 7px;
-    padding: 20px;
-    margin: 20px 20px;
+#skillDiv::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 30%;
+    background: linear-gradient(to left, rgb(26, 26, 26, 0), #1A1A1A, #1A1A1A);
+    content: "";
+    z-index: 2;
+}
+
+#skillDiv::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 30%;
+    background: linear-gradient(to right, rgb(26, 26, 26, 0), #1A1A1A, #1A1A1A);
+    content: "";
+    z-index: 2;
+}
+
+.skillSlide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 0 25px;
+    animation: 20s slide infinite linear;
+    background-color:#0E0E0E ;
+}
+
+#skillDiv:hover .skillSlide {
+    animation-play-state: paused;
+}
+
+.skillSlide div {
+    height: 135px;
+    width: 150px;
     background-color: #282828;
-    width: 20%;
-    height: 20%;
-    text-align: center;
+    border: double 3px transparent;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom left, #282828, #0E0E0E), radial-gradient(circle at top left, #1C427C, #4F883E);
+    background-clip: content-box, border-box;
+    margin: 20px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skillSlide div:hover {
+    background-image: linear-gradient(to top right, #282828, #0E0E0E), radial-gradient(circle at top left, #1C427C, #4F883E);
+}
+
+.skillSlide div img {
+    width: 40%;
+    height: auto;
+    margin: 15px 15px 0;
+}
+
+.skillSlide div p {
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
 }

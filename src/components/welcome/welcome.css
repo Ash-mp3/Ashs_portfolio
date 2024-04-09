@@ -5,11 +5,35 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+#toWebsiteBtn {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: fadeArrow ;
+    animation-duration: 2s;
+}
+
+#toWebsiteBtn svg {
+    height: 3em;
+    width: 3em;
+    color: #4F883E;
+    position: relative;
+    z-index: 2;
+    animation: downArrow infinite normal 1s; 
+    animation-delay: 2.5s;
+    cursor: pointer;
 }
 
 #welcomeMsg {
     display: flex;
-    /* flex-direction: column; */
     justify-content: space-between;
 }
 
@@ -34,14 +58,28 @@
     animation-duration: 2s;
 }
 
-/* @keyframes slideRight {
-    0% {left: -600px; border-right-color: rgb(79, 136, 62, 0); opacity: 0;}
+@keyframes slideRight {
+    0% {left: -20%; border-right-color: rgb(79, 136, 62, 0); opacity: 0;}
     80% {left: 0px; border-right-color: rgb(79, 136, 62, 0); opacity: 1;}
     100% { left: 0px; border-right-color: rgb(79, 136, 62);}
 }
 
 @keyframes slideLeft {
-    0% {left: 400px; }
-    80% {left: 0px; }
+    0% {left: 20%; opacity: 0;}
+    80% {left: 0px; opacity: 1;opacity: 1;}
     100% { left: 0px;}
-} */
+}
+
+@keyframes downArrow {
+    0% {transform:  translate(0, 0);}
+    50% {transform:  translate(0, 10px);}
+    100% {transform:  translate(0, 0); }
+}
+
+@keyframes fadeArrow {
+    0% {opacity: 0;}
+    80% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+

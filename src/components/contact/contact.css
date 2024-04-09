@@ -28,6 +28,11 @@ input, textarea {
     width: 100%;
     background-color: #282828;
     border: 2px solid black;
+    padding: 2px 0 2px 5px;
+}
+
+input:active {
+    border: none;
 }
 
 button {
