@@ -22,7 +22,7 @@ const Header = () => {
 		};
 
 		const handleClick = (e) => {
-			console.log(e.target);
+			// console.log(e.target);
 		};
 
 		// console.log(navLinks.current.children)

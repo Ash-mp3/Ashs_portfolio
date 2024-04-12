@@ -10,7 +10,6 @@ import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 const Carousel = () => {
-	// const [currImage, setCurrImage] = useState(0);
 	const [images, setImages] = useState();
 	const figureRef = useRef(null);
 	const [theta, setTheta] = useState();
@@ -83,52 +82,9 @@ const Carousel = () => {
 	}, []);
 
 	return (
-		<div className="carousel" ref={figureRef}>
-			<figure>
-				<div className="card">
-					<Image src={Capstone} alt="pokedex website image" />
-					<div className="projectInfo">
-						<div className="description">
-							<h4>Capstone Regestarion App</h4>
-							<p>
-								Frontend developed with React.js and Tailwind Css. Backend
-								through node and express.js. hosted on Render
-							</p>
-						</div>
-						<div className="buttons">
-							<Button variant="contained">Live Link</Button>
-							<Button variant="contained">Learn More</Button>
-						</div>
-					</div>
-				</div>
-				<div className="card">
-					<Image src={Todos} alt="pokedex website image" />
-					<div className="projectInfo">
-						<div className="description">
-							<h4>ToDo List website</h4>
-							<p>Developed with vinilia javascript. Hosted on github pages</p>
-						</div>
-						<div className="buttons">
-							<Button variant="contained">Live Link</Button>
-							<Button variant="contained">Learn More</Button>
-						</div>
-					</div>
-				</div>
-				<div className="card">
-					<Image src={Netflix} alt="pokedex website image" />
-
-					<div className="projectInfo">
-						<div className="description">
-							<h4>Netflix Mockup</h4>
-							<p>styled with Css3 and Tailwind Css. Hosted on github pages</p>
-						</div>
-						<div className="buttons">
-							<Button variant="contained">Live Link</Button>
-							<Button variant="contained">Learn More</Button>
-						</div>
-					</div>
-				</div>
-				<div className="card" id="firstCard">
+		<div className="carousel " ref={figureRef}>
+            <figure className="xl:w-[60%] lg:w-[70%] md:w-[100%]">
+                <div className="card" id="firstCard">
 					<Image src={Dex} alt="pokedex website image" />
 					<div className="projectInfo">
 						<div className="description">
@@ -138,28 +94,69 @@ const Carousel = () => {
 							</p>
 						</div>
 						<div className="buttons">
-							<Button variant="contained">Live Link</Button>
-							<Button variant="contained">Learn More</Button>
+                            <Button href="https://ash-mp3.github.io/pokedex/" variant="contained">Link</Button>
+							<Button href="https://github.com/Ash-mp3/pokedex" variant="contained">GitHub</Button>
 						</div>
 					</div>
 				</div>
+				<div className="card">
+					<Image src={Capstone} alt="Regestarion App website image" />
+					<div className="projectInfo">
+						<div className="description">
+							<h4>Regestarion App</h4>
+							<p>
+								Developed with React.js, Tailwind Css and express.js. Hosted on
+								Render
+							</p>
+						</div>
+						<div className="buttons">
+							<Button href="https://capstone-co5w.onrender.com/" variant="contained">Link</Button>
+							<Button href="https://github.com/Wackyprogamer/capstone" variant="contained">GitHub</Button>
+						</div>
+					</div>
+				</div>
+				<div className="card">
+					<Image src={Todos} alt="ToDo List website image" />
+					<div className="projectInfo">
+						<div className="description">
+							<h4>ToDo List website</h4>
+							<p>Developed with vinilia javascript. Hosted on github pages</p>
+						</div>
+						<div className="buttons">
+                            <Button href="https://ash-mp3.github.io/To-Do-List_Project/" variant="contained">Link</Button>
+							<Button href="https://github.com/Ash-mp3/To-Do-List_Project" variant="contained">GitHub</Button>
+						</div>
+					</div>
+				</div>
+				<div className="card">
+					<Image src={Netflix} alt="Netflix Mockup website image" />
+
+					<div className="projectInfo">
+						<div className="description">
+							<h4>Netflix Mockup</h4>
+							<p>styled with Css3 and Tailwind Css. Hosted on github pages</p>
+						</div>
+						<div className="buttons">
+                            <Button href="https://ash-mp3.github.io/netflix_page/" variant="contained">Link</Button>
+						    <Button href="https://github.com/Ash-mp3/netflix_page" variant="contained">GitHub</Button>
+						</div>
+					</div>
+				</div>
+				
 			</figure>
 			<nav>
-				{/* <IconButton className="prev" onClick={() => handlePrevNavigation("prev")}> */}
 				<ArrowBackIcon
-					className=" prev"
+					className="prev left-[-10%] lg:left-[-5%] sm:left-[-15%]"
 					onClick={() => handlePrevNavigation("prev")}
 				/>
-				{/* </IconButton> */}
-				{/* <IconButton className="next" onClick={() => handleNextNavigation("next")}> */}
 				<ArrowForwardIcon
-					className=" next"
+					className="next right-[10%] lg:right-[-5%] sm:right-[-15%]"
 					onClick={() => handleNextNavigation("next")}
 				/>
-				{/* </IconButton> */}
 			</nav>
 		</div>
 	);
+
 };
 
 export default Carousel;
