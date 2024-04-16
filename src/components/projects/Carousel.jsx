@@ -48,7 +48,6 @@ const Carousel = () => {
 		figure.style.transformOrigin = `50% 50% ${-apothem}px`;
 		for (let i = 0; i < n; i++) {
 			const image = figure.children[i];
-			// image.style.padding = `10px`;
 
 			if (i > 0) {
 				image.style.transformOrigin = `50% 50% ${-apothem}px`;
@@ -63,7 +62,7 @@ const Carousel = () => {
 		if (figure) {
 			figure.style.transform = `rotateY(${imageIndex * -theta}rad)`;
 		}
-	};
+    };
 
 	useEffect(() => {
 		handleResize(); // Initial setup
@@ -94,8 +93,8 @@ const Carousel = () => {
 							</p>
 						</div>
 						<div className="buttons">
-                            <Button href="https://ash-mp3.github.io/pokedex/" variant="contained">Link</Button>
-							<Button href="https://github.com/Ash-mp3/pokedex" variant="contained">GitHub</Button>
+                            <Button href="https://ash-mp3.github.io/pokedex/" target="_blank" variant="contained">Link</Button>
+							<Button href="https://github.com/Ash-mp3/pokedex" target="_blank" variant="contained">GitHub</Button>
 						</div>
 					</div>
 				</div>
@@ -110,8 +109,8 @@ const Carousel = () => {
 							</p>
 						</div>
 						<div className="buttons">
-							<Button href="https://capstone-co5w.onrender.com/" variant="contained">Link</Button>
-							<Button href="https://github.com/Wackyprogamer/capstone" variant="contained">GitHub</Button>
+							<Button href="https://capstone-co5w.onrender.com/" target="_blank" variant="contained">Link</Button>
+							<Button href="https://github.com/Wackyprogamer/capstone" target="_blank" variant="contained">GitHub</Button>
 						</div>
 					</div>
 				</div>
@@ -123,22 +122,21 @@ const Carousel = () => {
 							<p>Developed with vinilia javascript. Hosted on github pages</p>
 						</div>
 						<div className="buttons">
-                            <Button href="https://ash-mp3.github.io/To-Do-List_Project/" variant="contained">Link</Button>
-							<Button href="https://github.com/Ash-mp3/To-Do-List_Project" variant="contained">GitHub</Button>
+                            <Button href="https://ash-mp3.github.io/To-Do-List_Project/" target="_blank" variant="contained">Link</Button>
+							<Button href="https://github.com/Ash-mp3/To-Do-List_Project" target="_blank" variant="contained">GitHub</Button>
 						</div>
 					</div>
 				</div>
 				<div className="card">
 					<Image src={Netflix} alt="Netflix Mockup website image" />
-
 					<div className="projectInfo">
 						<div className="description">
 							<h4>Netflix Mockup</h4>
 							<p>styled with Css3 and Tailwind Css. Hosted on github pages</p>
 						</div>
 						<div className="buttons">
-                            <Button href="https://ash-mp3.github.io/netflix_page/" variant="contained">Link</Button>
-						    <Button href="https://github.com/Ash-mp3/netflix_page" variant="contained">GitHub</Button>
+                            <Button href="https://ash-mp3.github.io/netflix_page/" target="_blank" variant="contained">Link</Button>
+						    <Button href="https://github.com/Ash-mp3/netflix_page" target="_blank" variant="contained">GitHub</Button>
 						</div>
 					</div>
 				</div>

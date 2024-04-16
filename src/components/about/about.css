@@ -5,20 +5,23 @@
 #aboutContent {
     height: 60%;
     width: 100%;
+    margin-bottom: 150px;
     border-radius: 7px;
 }
 
 #aboutParagraph {
     height: 50%;
     width: 55%;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 300;
-    margin: 0 auto 80px;
+    text-indent: 50px;
+    margin: 0 auto;
 }
 
 #skillDiv {
     width: 100%;
     height: 50%;
+    margin-top: 80px;
     display: flex;
     overflow: hidden;
     position: relative;

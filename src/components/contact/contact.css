@@ -4,32 +4,44 @@
 
 #contactContent {
     height: 60%;
-    width: 60%;
-    background-color: #282828;
-    border: 2px solid black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 150px;
     border-radius: 7px;
     padding: 10px 20px;
 }
 
-#contactContent h4 {
-    margin: 10px 0;
+#emailForm {
+    width: 35%;
 }
 
-#contactContent form {
+#emailForm h4 {
+    margin: 10px 0;
+    font-size: 2rem;
+}
+
+#emailForm form {
     display: flex;
     flex-direction: column;
-    margin: 30px 0;
-    color: black;
+    margin: 40px 0 10px 0;
     align-items: flex-end;
     gap: 10px;
+    
 }
 
 input, textarea {
     width: 100%;
-    background-color: #282828;
-    border: 2px solid black;
-    padding: 2px 0 2px 5px;
+    background-color: #0E0E0E;
+    outline-style: none;
+    padding: 10px 0 10px 10px;
+    font-size: 1.6rem;
 }
+
+
+input:focus, textarea:focus {
+    outline-style: none;
+  }
 
 input:active {
     border: none;
@@ -39,6 +51,16 @@ button {
     border: 2px solid black;
     color: #0e3a80;
     padding: 2px 7px;
+}
+
+button span {
+    font-size: 1.4rem;
+}
+
+.contactLinks {
+    background-color: blue;
+    width: 80%;
+    height: 20%;
 }
 
 

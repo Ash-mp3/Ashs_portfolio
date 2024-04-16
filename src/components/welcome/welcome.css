@@ -22,8 +22,8 @@
 }
 
 #toWebsiteBtn svg {
-    height: 3em;
-    width: 3em;
+    height: 7rem;
+    width: 7rem;
     color: #4F883E;
     position: relative;
     z-index: 2;
@@ -43,7 +43,7 @@
 
 #welcomePage h1 {
     width: min-content;
-    font-size: 1.3em;
+    font-size: 2rem;
     align-self: center;
     text-align: flex-end;
     position: relative;
