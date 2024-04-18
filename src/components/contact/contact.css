@@ -7,13 +7,13 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-bottom: 150px;
+    margin-bottom: 75px;
     border-radius: 7px;
     padding: 10px 20px;
 }
 
 #emailForm {
-    width: 35%;
+    /* width: 35%; */
 }
 
 #emailForm h4 {
@@ -24,7 +24,7 @@
 #emailForm form {
     display: flex;
     flex-direction: column;
-    margin: 40px 0 10px 0;
+    margin: 30px 0 10px 0;
     align-items: flex-end;
     gap: 10px;
     
@@ -34,7 +34,7 @@ input, textarea {
     width: 100%;
     background-color: #0E0E0E;
     outline-style: none;
-    padding: 10px 0 10px 10px;
+    padding: 10px 0 10px 15px;
     font-size: 1.6rem;
 }
 

@@ -6,4 +6,32 @@ footer {
     text-align: center;
     font-size: small;
     box-shadow: 0 -3px 5px 0 #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #linkBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 40%; */
+    cursor: pointer;
+
+  }
+
+  footer a {
+    width: 30px;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .contactImg {
+    width: 40px;
+  } 
+
+  .contactImg:hover {
+   transform: scale(1.2);
   }

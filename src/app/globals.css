@@ -17,7 +17,6 @@ html {
     -webkit-locale: "en";
 }
 
-html,
 body {
   min-height: 100vh;
   width: 100%;
@@ -41,7 +40,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 90px ;
+  /* padding: 0 90px ; */
 }
 
 .pageHeaderDiv {

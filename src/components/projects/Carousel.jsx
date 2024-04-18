@@ -82,19 +82,19 @@ const Carousel = () => {
 
 	return (
 		<div className="carousel " ref={figureRef}>
-            <figure className="xl:w-[60%] lg:w-[70%] md:w-[100%]">
+            <figure className=" w-[100%] md:w-[80%] lg:w-[90%] xl:w-[75%] 2xl:w-[60%]">
                 <div className="card" id="firstCard">
 					<Image src={Dex} alt="pokedex website image" />
 					<div className="projectInfo">
 						<div className="description">
-							<h4>Pokemon Api Project</h4>
-							<p>
+							<h4 className=" text-[1.5rem] sm:text-[2.5rem] md:text-[2.8rem]">Pokemon Api Project</h4>
+							<p className=" text-[1rem] sm:text-[1.2rem] md:text-[1.5rem]">
 								Developed with React.js and Tailwind Css. Hosted on github pages
 							</p>
 						</div>
 						<div className="buttons">
-                            <Button href="https://ash-mp3.github.io/pokedex/" target="_blank" variant="contained">Link</Button>
-							<Button href="https://github.com/Ash-mp3/pokedex" target="_blank" variant="contained">GitHub</Button>
+                            <Button href="https://ash-mp3.github.io/pokedex/" target="_blank" variant="contained" className="text-[0.8rem] w-[50%] m-[3px] md:text-[1rem] lg:text-[1.5rem]">Link</Button>
+							<Button href="https://github.com/Ash-mp3/pokedex" target="_blank" variant="contained" className="text-[0.8rem] w-[50%] m-[3px] md:text-[1rem] lg:text-[1.5rem]">GitHub</Button>
 						</div>
 					</div>
 				</div>
@@ -102,15 +102,15 @@ const Carousel = () => {
 					<Image src={Capstone} alt="Regestarion App website image" />
 					<div className="projectInfo">
 						<div className="description">
-							<h4>Regestarion App</h4>
-							<p>
+							<h4 className=" text-[1.5rem] sm:text-[2.5rem] md:text-[2.8rem]">Regestarion App</h4>
+							<p className=" text-[1rem] sm:text-[1.2rem] md:text-[1.5rem]">
 								Developed with React.js, Tailwind Css and express.js. Hosted on
 								Render
 							</p>
 						</div>
 						<div className="buttons">
-							<Button href="https://capstone-co5w.onrender.com/" target="_blank" variant="contained">Link</Button>
-							<Button href="https://github.com/Wackyprogamer/capstone" target="_blank" variant="contained">GitHub</Button>
+							<Button href="https://capstone-co5w.onrender.com/" target="_blank" variant="contained" className="text-[0.8rem] w-[50%] m-[3px] md:text-[1rem] lg:text-[1.5rem]">Link</Button>
+							<Button href="https://github.com/Wackyprogamer/capstone" target="_blank" variant="contained" className="text-[0.8rem] w-[50%] m-[3px] md:text-[1rem] lg:text-[1.5rem]">GitHub</Button>
 						</div>
 					</div>
 				</div>
@@ -118,12 +118,12 @@ const Carousel = () => {
 					<Image src={Todos} alt="ToDo List website image" />
 					<div className="projectInfo">
 						<div className="description">
-							<h4>ToDo List website</h4>
-							<p>Developed with vinilia javascript. Hosted on github pages</p>
+							<h4 className=" text-[1.5rem] sm:text-[2.5rem] md:text-[2.8rem]">ToDo List website</h4>
+							<p className=" text-[1rem] sm:text-[1.2rem] md:text-[1.5rem]">Developed with vinilia javascript. Hosted on github pages</p>
 						</div>
 						<div className="buttons">
-                            <Button href="https://ash-mp3.github.io/To-Do-List_Project/" target="_blank" variant="contained">Link</Button>
-							<Button href="https://github.com/Ash-mp3/To-Do-List_Project" target="_blank" variant="contained">GitHub</Button>
+                            <Button href="https://ash-mp3.github.io/To-Do-List_Project/" target="_blank" variant="contained" className="text-[0.8rem] w-[50%] m-[3px] md:text-[1rem] lg:text-[1.5rem]">Link</Button>
+							<Button href="https://github.com/Ash-mp3/To-Do-List_Project" target="_blank" variant="contained" className="text-[0.8rem] w-[50%] m-[3px] md:text-[1rem] lg:text-[1.5rem]">GitHub</Button>
 						</div>
 					</div>
 				</div>
@@ -131,12 +131,12 @@ const Carousel = () => {
 					<Image src={Netflix} alt="Netflix Mockup website image" />
 					<div className="projectInfo">
 						<div className="description">
-							<h4>Netflix Mockup</h4>
-							<p>styled with Css3 and Tailwind Css. Hosted on github pages</p>
+							<h4 className=" text-[1.5rem] sm:text-[2.5rem] md:text-[2.8rem]">Netflix Mockup</h4>
+							<p className=" text-[1rem] sm:text-[1.2rem] md:text-[1.5rem]">styled with Css3 and Tailwind Css. Hosted on github pages</p>
 						</div>
 						<div className="buttons">
-                            <Button href="https://ash-mp3.github.io/netflix_page/" target="_blank" variant="contained">Link</Button>
-						    <Button href="https://github.com/Ash-mp3/netflix_page" target="_blank" variant="contained">GitHub</Button>
+                            <Button href="https://ash-mp3.github.io/netflix_page/" target="_blank" variant="contained" className="text-[0.8rem] w-[50%] m-[3px] md:text-[1rem] lg:text-[1.5rem]">Link</Button>
+						    <Button href="https://github.com/Ash-mp3/netflix_page" target="_blank" variant="contained" className="text-[0.8rem] w-[50%] m-[3px] md:text-[1rem] lg:text-[1.5rem]">GitHub</Button>
 						</div>
 					</div>
 				</div>
@@ -144,11 +144,11 @@ const Carousel = () => {
 			</figure>
 			<nav>
 				<ArrowBackIcon
-					className="prev left-[-10%] lg:left-[-5%] sm:left-[-15%]"
+					className="prev left-[20%] bottom-[-20%] md:bottom-[-15%] lg:bottom-[40%] lg:left-[-10%] xl:left-[0%] 2xl:left-[10%]"
 					onClick={() => handlePrevNavigation("prev")}
 				/>
 				<ArrowForwardIcon
-					className="next right-[10%] lg:right-[-5%] sm:right-[-15%]"
+					className="next right-[20%] bottom-[-20%] md:bottom-[-15%] lg:bottom-[40%] lg:right-[-10%] xl:right-[0%] 2xl:right-[10%] "
 					onClick={() => handleNextNavigation("next")}
 				/>
 			</nav>

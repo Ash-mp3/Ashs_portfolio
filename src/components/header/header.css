@@ -23,12 +23,29 @@ header {
 }
 
 #navLinks {
-    width: 25%;
-    display: flex;
+    position: absolute;
+    right: 0;
+    width: auto;
+    height: 100%;
     justify-content: space-around;
     align-items: center;
     font-size: 1.8rem;
+    gap: 50px;
+    margin: 0 50px;
 
+}
+
+#menuNavLinks {
+    position: absolute;
+    right: 0;
+    width: auto;
+    height: 100%;
+}
+
+#menuNavLinks svg {
+    font-size: larger;
+    width: 100%;
+    height: 90%;
 }
 
 .sticky{

@@ -8,8 +8,8 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 export default function Welcome() {
     return (
         <div id="welcomePage">
-            <div id="welcomeMsg">
-                <Image id="logoImg" src={ashLogo} alt="ash logo"/>
+            <div id="welcomeMsg" className="flex-col xl:flex-row">
+                <Image id="logoImg" className="w-[70vw] border-b-[4px] py-[40px] md:p-0 xl:border-b-[0px] xl:border-r-[4px] xl:w-[700px]"  src={ashLogo} alt="ash logo"/>
                 <h1>Full Stack Web Developer</h1>
             </div>
             <div id="toWebsiteBtn">

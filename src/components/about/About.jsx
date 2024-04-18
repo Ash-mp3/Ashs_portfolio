@@ -12,14 +12,14 @@ import expressLogo from "../../imgs/skillImgs/expressLogo.png";
 
 const About = () => {
 	return (
-		<div id="aboutPage" className="PageStructure">
+		<div id="aboutPage" className="PageStructure px-0 lg:px-[90px]">
 			<div className="pageHeaderDiv">
 				<div className="colorDiv"></div>
 				<div className="grayDiv"></div>
 				<h2>About</h2>
 			</div>
 			<div id="aboutContent">
-				<p id="aboutParagraph">
+				<p id="aboutParagraph" className=" text-[1.6rem] w-[80vw] md:text-[2rem] md:w-[600px] lg:w-[700px] ">
                     Hi, my name is Asher Contreras. I'm a full-stack web developer who thrives
                     on learning. I'm passionate about understanding and utilizing the current
                     cyberspace around me, and I'm always excited to dive in and learn new techniques
@@ -28,79 +28,79 @@ const About = () => {
 				</p>
 				<div id="skillDiv">
 					<div className="skillSlide">
-						<div>
+						<div className="h-[70px] w-[70px] md:h-[100px] md:w-[100px] lg:w-[150px] lg:h-[135px]">
 							<Image src={jsLogo} alt="javascript logo" />
-							<p>JAVASCRIPT</p>
+							<p className=" text-[10px] md:text-[15px] lg:text-[20px]">JAVASCRIPT</p>
 						</div>
-						<div>
+						<div className="h-[70px] w-[70px] md:h-[100px] md:w-[100px] lg:w-[150px] lg:h-[135px]">
 							<Image src={htmlLogo} alt="html logo" />
-							<p>HTML</p>
+							<p className=" text-[10px] md:text-[15px] lg:text-[20px]">HTML</p>
 						</div>
-						<div>
+						<div className="h-[70px] w-[70px] md:h-[100px] md:w-[100px] lg:w-[150px] lg:h-[135px]">
 							<Image src={cssLogo} alt="css logo" />
-							<p>CSS</p>
+							<p className=" text-[10px] md:text-[15px] lg:text-[20px]">CSS</p>
 						</div>
-						<div>
+						<div className="h-[70px] w-[70px] md:h-[100px] md:w-[100px] lg:w-[150px] lg:h-[135px]">
 							<Image src={reactLogo} alt="react logo" />
-							<p>REACT.JS</p>
+							<p className=" text-[10px] md:text-[15px] lg:text-[20px]">REACT.JS</p>
 						</div>
-						<div>
+						<div className="h-[70px] w-[70px] md:h-[100px] md:w-[100px] lg:w-[150px] lg:h-[135px]">
 							<Image src={angularLogo} alt="angular logo" />
-							<p>ANGULAR</p>
+							<p className=" text-[10px] md:text-[15px] lg:text-[20px]">ANGULAR</p>
 						</div>
-						<div>
+						<div className="h-[70px] w-[70px] md:h-[100px] md:w-[100px] lg:w-[150px] lg:h-[135px]">
 							<Image src={nodeLogo} alt="node logo" />
-							<p>NODE.JS</p>
+							<p className=" text-[10px] md:text-[15px] lg:text-[20px]">NODE.JS</p>
 						</div>
-						<div>
+						<div className="h-[70px] w-[70px] md:h-[100px] md:w-[100px] lg:w-[150px] lg:h-[135px]">
 							<Image src={expressLogo} alt="express logo" />
-							<p>EXPRESS.JS</p>
+							<p className=" text-[10px] md:text-[15px] lg:text-[20px]">EXPRESS.JS</p>
 						</div>
-						<div>
+						<div className="h-[70px] w-[70px] md:h-[100px] md:w-[100px] lg:w-[150px] lg:h-[135px]">
 							<Image src={gitHubLogo} alt="github logo" />
-							<p>GITHUB</p>
+							<p className=" text-[10px] md:text-[15px] lg:text-[20px]">GITHUB</p>
 						</div>
-						<div>
+						<div className="h-[70px] w-[70px] md:h-[100px] md:w-[100px] lg:w-[150px] lg:h-[135px]">
 							<Image src={gitLogo} alt="git logo" />
-							<p>GIT</p>
+							<p className=" text-[10px] md:text-[15px] lg:text-[20px]">GIT</p>
 						</div>
 					</div>
 					<div className="skillSlide">
-						<div>
+						<div className="h-[70px] w-[70px] md:h-[100px] md:w-[100px] lg:w-[150px] lg:h-[135px]">
 							<Image src={jsLogo} alt="javascript logo" />
-							<p>JAVASCRIPT</p>
+							<p className=" text-[10px] md:text-[15px] lg:text-[20px]">JAVASCRIPT</p>
 						</div>
-						<div>
+						<div className="h-[70px] w-[70px] md:h-[100px] md:w-[100px] lg:w-[150px] lg:h-[135px]">
 							<Image src={htmlLogo} alt="html logo" />
-							<p>HTML</p>
+							<p className=" text-[10px] md:text-[15px] lg:text-[20px]">HTML</p>
 						</div>
-						<div>
+						<div className="h-[70px] w-[70px] md:h-[100px] md:w-[100px] lg:w-[150px] lg:h-[135px]">
 							<Image src={cssLogo} alt="css logo" />
-							<p>CSS</p>
+							<p className=" text-[10px] md:text-[15px] lg:text-[20px]">CSS</p>
 						</div>
-						<div>
+						<div className="h-[70px] w-[70px] md:h-[100px] md:w-[100px] lg:w-[150px] lg:h-[135px]">
 							<Image src={reactLogo} alt="react logo" />
-							<p>REACT.JS</p>
+							<p className=" text-[10px] md:text-[15px] lg:text-[20px]">REACT.JS</p>
 						</div>
-						<div>
+						<div className="h-[70px] w-[70px] md:h-[100px] md:w-[100px] lg:w-[150px] lg:h-[135px]">
 							<Image src={angularLogo} alt="angular logo" />
-							<p>ANGULAR</p>
+							<p className=" text-[10px] md:text-[15px] lg:text-[20px]">ANGULAR</p>
 						</div>
-						<div>
+						<div className="h-[70px] w-[70px] md:h-[100px] md:w-[100px] lg:w-[150px] lg:h-[135px]">
 							<Image src={nodeLogo} alt="node logo" />
-							<p>NODE.JS</p>
+							<p className=" text-[10px] md:text-[15px] lg:text-[20px]">NODE.JS</p>
 						</div>
-						<div>
+						<div className="h-[70px] w-[70px] md:h-[100px] md:w-[100px] lg:w-[150px] lg:h-[135px]">
 							<Image src={expressLogo} alt="express logo" />
-							<p>EXPRESS.JS</p>
+							<p className=" text-[10px] md:text-[15px] lg:text-[20px]">EXPRESS.JS</p>
 						</div>
-						<div>
+						<div className="h-[70px] w-[70px] md:h-[100px] md:w-[100px] lg:w-[150px] lg:h-[135px]">
 							<Image src={gitHubLogo} alt="github logo" />
-							<p>GITHUB</p>
+							<p className=" text-[10px] md:text-[15px] lg:text-[20px]">GITHUB</p>
 						</div>
-						<div>
+						<div className="h-[70px] w-[70px] md:h-[100px] md:w-[100px] lg:w-[150px] lg:h-[135px]">
 							<Image src={gitLogo} alt="git logo" />
-							<p>GIT</p>
+							<p className=" text-[10px] md:text-[15px] lg:text-[20px]">GIT</p>
 						</div>
 					</div>
 				</div>

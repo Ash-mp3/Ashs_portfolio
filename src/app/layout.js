@@ -19,7 +19,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-      <html lang="en">
+      <html lang="en" >
         <body id="body" className={openSans.className}>{children}</body>
       </html>
   );

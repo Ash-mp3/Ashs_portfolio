@@ -37,12 +37,9 @@
     justify-content: space-between;
 }
 
-#welcomeMsg * {
-    margin: 0 30px;
-}
-
 #welcomePage h1 {
     width: min-content;
+    margin: 30px;
     font-size: 2rem;
     align-self: center;
     text-align: flex-end;
@@ -52,16 +49,18 @@
 }
 
 #logoImg {
-    border-right: 4px solid rgb(79, 136, 62);
+    border-color: rgb(79, 136, 62);
+    border-style: solid;
     position: relative;
+    margin: 30px;
     animation-name: slideRight;
     animation-duration: 2s;
 }
 
 @keyframes slideRight {
-    0% {left: -20%; border-right-color: rgb(79, 136, 62, 0); opacity: 0;}
-    80% {left: 0px; border-right-color: rgb(79, 136, 62, 0); opacity: 1;}
-    100% { left: 0px; border-right-color: rgb(79, 136, 62);}
+    0% {left: -20%; border-color: rgb(79, 136, 62, 0); opacity: 0;}
+    80% {left: 0px; border-color: rgb(79, 136, 62, 0); opacity: 1;}
+    100% { left: 0px; border-color: rgb(79, 136, 62);}
 }
 
 @keyframes slideLeft {
