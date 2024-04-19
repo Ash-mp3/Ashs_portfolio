@@ -7,18 +7,18 @@ import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import MenuIcon from '@mui/icons-material/Menu';
+import { useMediaQuery } from "@mui/system";
 
 const Header = () => {
 	const header = useRef(null);
-	const nav = useRef();
 	const [stickyHeader, setStickyHeader] = useState("");
-	const [anchorEl, setAnchorEl] = useState(null);
+    const [anchorEl, setAnchorEl] = useState(null);
+    const [showMenu, setShowMenu] = useState(false);
 	const open = Boolean(anchorEl);
-	const [currLink, setCurrLink] = useState();
+    const isWideViewport = useMediaQuery("(min-width: 768px)");
 
 	useEffect(() => {
 		const navbarOffset = header.current.offsetTop;
-		const navLinks = nav.current.children;
 		const handleScroll = (e) => {
 			if (window.scrollY >= navbarOffset) {
 				setStickyHeader("sticky");
@@ -28,9 +28,13 @@ const Header = () => {
 		};
 
 		window.addEventListener("scroll", handleScroll);
-		for (let i = 0; i < navLinks.length; i++) {
-			navLinks[i].addEventListener("click", handleClick);
-		}
+        window.addEventListener("resize", () => {
+            if (window.innerWidth <= 767) {
+                setShowMenu(true)
+            } else if (window.innerWidth > 767) {
+                setShowMenu(false)
+            }
+        });
 	}, []);
 
 	const handleClick = (event) => {
@@ -38,13 +42,14 @@ const Header = () => {
 	};
 	const handleClose = () => {
 		setAnchorEl(null);
-	};
+    };
+
 
 	return (
 		<div id="ghostHeader">
 			<header ref={header} className={stickyHeader}>
 				<Image id="ashLogo" src={ashLogo} alt="ash logo" />
-				<div ref={nav} id="navLinks" className="hidden md:flex">
+				<div id="navLinks" className="hidden pointer-events-none md:flex md:pointer-events-auto">
 					<AnchorLink href="#welcomePage">Home</AnchorLink>
 					<AnchorLink href="#aboutPage">About</AnchorLink>
 					<AnchorLink href="#projectsPage">Projects</AnchorLink>
@@ -53,7 +58,7 @@ const Header = () => {
 				<div id="menuNavLinks" className="inline md:hidden">
 					<Button
                         id="basic-button"
-                        className=" h-full"
+                        className=" h-full inline md:hidden md:pointer-events-none"
                         color="inherit"
 						aria-controls={open ? "basic-menu" : undefined}
 						aria-haspopup="true"
