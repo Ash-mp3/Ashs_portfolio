@@ -3,7 +3,6 @@
 }
 
 #projectsContent {
-    /* width: 80%; */
     height: auto;
     margin-bottom: 150px;
     display: flex;
@@ -21,6 +20,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: re;
 
 }
 
@@ -33,13 +33,17 @@ figure {
     transition: transform 0.5s;
 }
 
+#firstCard {
+    position: relative;
+    z-index: 2;
+}
+
 .card {
     width: 100%;
     padding: 0 0 / 2;
     flex: 0 0 auto;
     position: relative;
     border-radius: 30px;
-    overflow: hidden;
     z-index: 1;
     &:not(:first-of-type) {
         position: absolute;
@@ -47,6 +51,11 @@ figure {
         top: 0;
         z-index: 0;
     }
+}
+
+.card img {
+    border-radius: 30px;
+    overflow: hidden;
 }
 
 .projectInfo {
@@ -58,16 +67,12 @@ figure {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 0 0 28.5px 28.5px;
 }
 
 .description {
     width: 60%;
     margin-left: 2rem;
-    /* font-size: 1.5rem; */
-}
-
-.description h4 {
-    /* font-size: 2.8rem; */
 }
 
 .buttons {
@@ -79,15 +84,14 @@ figure {
 }
 
 .buttons a {
-    /* width: 75%; */
     background-color: #1C427C;
     box-shadow: 5px 5px 10px black;
     margin: 3px;
-    /* font-size: 1.5rem; */
 }
 
 .buttons button:hover {
     background-color: #14315c;
+    cursor: pointer;
 }
 
 .carousel nav {
@@ -99,7 +103,6 @@ figure {
 nav .prev {
     color: gray;
     position: absolute;
-    /* top: 45%; */
     height: 8rem;
     width: 8rem;
 }
@@ -107,7 +110,6 @@ nav .prev {
 nav .next {
     color: gray;
     position: absolute;
-    /* top: 45%; */
     height: 8rem;
     width: 8rem;
 }
@@ -120,7 +122,6 @@ nav .prev:hover {
 nav .next:hover {
     color: #1C427C;
     animation: 1s movingArrowRight infinite;
-    
 }
 
 
@@ -136,3 +137,4 @@ nav .next:hover {
     50% {transform: translate(-10px, 0);}
     100% {transform: translate(0, 0);}
 }
+

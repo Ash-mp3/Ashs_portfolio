@@ -45,7 +45,7 @@ const Contact = () => {
 						<Button
 							type="submit"
 							disabled={state.submitting}
-                            variant="outlined"
+                            variant="contained"
                             color={state.succeeded ? "success" : "primary"}
 						>
 							<span>{state.succeeded ? "Sent" : "Submit"}</span>

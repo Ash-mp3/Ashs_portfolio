@@ -26,12 +26,12 @@ const Carousel = () => {
 	};
 
 	const handlePrevNavigation = () => {
-		currImage += 1;
+		currImage -= 1;
 		rotateCarousel(currImage);
 	};
 
 	const handleNextNavigation = () => {
-		currImage -= 1;
+		currImage += 1;
 		rotateCarousel(currImage);
 	};
 
@@ -145,11 +145,11 @@ const Carousel = () => {
 			<nav>
 				<ArrowBackIcon
 					className="prev left-[20%] bottom-[-20%] md:bottom-[-15%] lg:bottom-[40%] lg:left-[-10%] xl:left-[0%] 2xl:left-[10%]"
-					onClick={() => handlePrevNavigation("prev")}
+					onClick={() => handlePrevNavigation()}
 				/>
 				<ArrowForwardIcon
 					className="next right-[20%] bottom-[-20%] md:bottom-[-15%] lg:bottom-[40%] lg:right-[-10%] xl:right-[0%] 2xl:right-[10%] "
-					onClick={() => handleNextNavigation("next")}
+					onClick={() => handleNextNavigation()}
 				/>
 			</nav>
 		</div>

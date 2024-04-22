@@ -17,7 +17,7 @@
 }
 
 #emailForm h4 {
-    margin: 10px 0;
+    margin: 10px 15px;
     font-size: 2rem;
 }
 
@@ -47,11 +47,12 @@ input:active {
     border: none;
 }
 
-button {
-    border: 2px solid black;
-    color: #0e3a80;
-    padding: 2px 7px;
-}
+
+button[type="submit"] {
+    margin: 15px;
+    /* color: #0e3a80; */
+    background-color: #0e3a80;
+ }
 
 button span {
     font-size: 1.4rem;
